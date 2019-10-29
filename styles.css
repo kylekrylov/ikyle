@@ -1,0 +1,287 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    width: 100%;
+    background: black;
+    display: flex;
+}
+
+.heder_logo {
+    text-transform: uppercase;
+    color: white;
+    font-size: 24px;
+    font-weight: 800;
+    cursor: pointer;
+    margin-top: 56px;
+    margin-left: 12%;
+}
+
+nav {
+    margin-top: 56px;
+    margin-left: 29%;
+}
+
+.topnav a {
+    color: white;
+    text-align: center;
+    padding: 12px 16px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.topnav a:hover {
+    border-bottom: 3px solid #680F6B;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+main .main_welcome {
+    background: black;
+    text-align: center;
+    padding: 200px 0 410px 0;
+}
+
+main .main_welcome p {
+    color: #999999;
+    font-size: 20px;
+    font-family: 'Maven Pro', sans-serif;
+}
+
+main .main_welcome h1 {
+    color: #999999;
+    font-size: 44px;
+    font-weight: lighter;
+    /* text-transform: uppercase; */
+    font-weight: 100;
+}
+
+.mycompany {
+    text-transform: uppercase;
+    color: #680F6B;
+    font-weight: 900;
+}
+
+.myexperience {
+    color: #680F6B;
+    font-weight: 800;
+}
+
+.wrapper {
+    width: 76%;
+    margin: 0 auto;
+}
+
+.main_about {
+    display: flex;
+    padding: 100px 0 100px 0;
+}
+
+.about_left {
+    text-align: center;
+}
+
+.about_right {
+    margin-left: 175px;
+}
+
+.about_right h1 {
+    display: inline-block;
+    /* color: #680F6B; */
+    border-bottom: 3px solid #680F6B;
+    padding-bottom: 20px;
+}
+
+.about_right p {
+    margin: 30px 0 50px 0;
+    color: #6c6c6c;
+}
+
+.about_right li {
+    background: url(Img/.png) 0px no-repeat;
+    padding-left: 25px;
+    margin-top: 10px;
+    font-style: italic;
+    color: #5a5a5a;
+}
+
+.abourright_MSC {
+    font-weight: bold;
+    font-style: normal;
+}
+
+.mw-100 {
+    min-width: 50%;
+}
+
+.main_team {
+    background: black;
+    text-align: center;
+    padding: 100px 0 165px 0;
+    color: white;
+}
+
+.main_team h1 {
+    font-size: 44px;
+    padding-bottom: 30px;
+}
+
+.line {
+    width: 100px;
+    height: 3px;
+    background: #680F6B;
+    position: relative;
+    left: 45%;
+    margin-bottom: 85px;
+}
+
+.photo {
+    background: gray;
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    margin: 20px auto;
+}
+
+.team_cards {
+    display: flex;
+}
+
+.card {
+    margin: 0 40px;
+}
+
+.name {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+
+.position {
+    font-size: 16px;
+    margin-bottom: 35px;
+}
+
+.about_positio {
+    font-size: 14px;
+}
+
+.servises_cards {
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-column-gap: 20px;
+}
+
+.main_services h1 {
+    text-align: center;
+}
+
+
+/* адаптивная верстка адаптивная верстка адаптивная верстка адаптивная верстка адаптивная верстка */
+
+@media screen and (max-width: 1330px) {
+    nav {
+        margin-left: 20%;
+    }
+    .mw-100 {
+        max-width: 100%;
+    }
+    .main_about {
+        flex-direction: column;
+    }
+    .about_right {
+        text-align: center;
+        margin-left: 0;
+    }
+    .about_right li {
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 1145px) {
+    nav {
+        margin-left: 10%;
+    }
+}
+
+@media screen and (max-width: 1010px) {
+    .topnav a {
+        display: none;
+    }
+    .topnav a.icon {
+        float: right;
+        margin-top: -17px;
+        display: block;
+        color: white;
+        font-size: 25px;
+    }
+    nav {
+        width: 100%;
+    }
+    .topnav.responsive {
+        position: relative;
+        top: 50px;
+        left: -200px;
+    }
+    header .topnav.responsive {
+        height: 340px;
+    }
+    .topnav.responsive a.icon {
+        position: absolute;
+        top: -50px;
+        right: -200px;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    main .main_welcome {
+        padding: 50px 0 50px 0;
+    }
+    main .main_welcome p {
+        font-size: 14px;
+    }
+    main .main_welcome h1 {
+        font-size: 25px;
+    }
+    .mw-100 {
+        max-width: 100%;
+    }
+    .main_about {
+        flex-direction: column;
+    }
+    .about_right {
+        text-align: center;
+        margin-left: 0;
+    }
+    .about_right li {
+        text-align: left;
+    }
+    .team_cards {
+        flex-direction: column;
+    }
+}
