@@ -152,8 +152,9 @@ main .main_welcome h1 {
     width: 100px;
     height: 3px;
     background: #680F6B;
-    position: relative;
-    left: 45%;
+    /* position: relative;
+    left: 45%; */
+    margin: 0 auto;
     margin-bottom: 85px;
 }
 
@@ -197,6 +198,181 @@ main .main_welcome h1 {
 
 .main_services h1 {
     text-align: center;
+    text-transform: uppercase;
+    padding: 100px 0 30px 0;
+    font-weight: 900;
+}
+
+.main_services p {
+    color: #6c6c6c;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+
+/* .main_services i {
+    text-align: center;
+} */
+
+.servises_card h4 {
+    margin: 20px 0 20px 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.servises_card p {
+    font-size: 14px;
+}
+
+.main_clients {
+    background: #000;
+    padding: 100px 0 205px 0;
+    color: white;
+    text-align: center;
+}
+
+.main_clients h1 {
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.main_clients img {
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.SOME_OF {
+    font-weight: 100;
+}
+
+.main_testimonials {
+    background: #000000;
+    text-align: center;
+    color: white;
+    padding-bottom: 170px;
+}
+
+.main_testimonials h1 {
+    text-transform: uppercase;
+    margin-top: 100px;
+    margin-bottom: 30px;
+    /* padding-bottom: 170px; */
+}
+
+.main_testimonials .testimonial {
+    /* color: white; */
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+.main_work {
+    text-align: center;
+    padding: 100px 0 100px 0;
+}
+
+.main_work h1 {
+    margin-bottom: 30px;
+}
+
+.main_work p {
+    margin-bottom: 175px;
+    color: #6c6c66;
+}
+
+.main_work img:hover {
+    opacity: 0.9;
+}
+
+.contact_form {
+    padding: 100px 0 100px 0;
+}
+
+.contact_form h1,
+p {
+    text-align: center;
+}
+
+form p {
+    text-align: left;
+}
+
+.contact_wrapper {
+    width: 753px;
+    margin: 0 auto;
+    color: #636363;
+}
+
+.red {
+    color: red;
+}
+
+.contact_form h1 {
+    color: black;
+    margin-bottom: 30px;
+}
+
+.form_inputs {
+    display: flex;
+    margin-top: 100px;
+}
+
+input {
+    width: 360px;
+    height: 40px;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+input:first-of-type {
+    margin-right: 29px;
+}
+
+textarea {
+    width: 100%;
+    height: 163px;
+}
+
+input,
+textarea {
+    border: 1px solid #999999;
+}
+
+.button_block {
+    display: flex;
+    justify-content: flex-end;
+}
+
+input[type=submit] {
+    width: 165px;
+    height: 40px;
+    background: #680F6B;
+    color: white;
+    margin-right: 0;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+footer {
+    width: 100%;
+    height: auto;
+    background-color: #222222;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+}
+
+.social img {
+    /* margin-left: 12px; */
+    margin: 30px 12px 30px 0px;
+    border-radius: 30px
+}
+
+.social img:hover {
+    opacity: 1;
+    background-color: white;
 }
 
 
@@ -284,4 +460,18 @@ main .main_welcome h1 {
     .team_cards {
         flex-direction: column;
     }
+    .servises_cards {
+        grid-template-columns: auto;
+    }
+    .line1 img:not(:first-child) {
+        display: none;
+    }
+    .line2 img:not(:first-child) {
+        display: none;
+    }
+    .line3 img:not(:first-child) {
+        display: none;
+    }
 }
+
+¡
