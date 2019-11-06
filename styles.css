@@ -21,6 +21,11 @@ header {
     display: flex;
 }
 
+img,
+a {
+    cursor: pointer;
+}
+
 .heder_logo {
     text-transform: uppercase;
     color: white;
